@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visor de Clima por Ciudad</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Visor de Clima</h1>
+    
+    <!-- Sección de búsqueda -->
+    <div class="search-section">
+      <input type="text" id="cityInput" placeholder="Ingresa una ciudad..." />
+      <button id="searchBtn">Buscar</button>
+      <div id="result"></div>
+    </div>
+
+    <!-- Sección de ciudades principales de Bolivia -->
+    <div class="bolivia-section">
+      <h2>Principales Ciudades de Bolivia</h2>
+      <div id="boliviaCities" class="cities-grid">
+        <!-- Se llenará automáticamente -->
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
